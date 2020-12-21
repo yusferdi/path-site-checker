@@ -11,7 +11,7 @@ $path2   = array_search( "--path-list", $argv );
 $help1   = array_search( "-H", $argv );
 $help2   = array_search( "--help", $argv );
 
-if( $argv < 1 ) {
+if( count($argv) == 1 ) {
     echo "Use the '-H' or '--help' for the information about this tools.";
     exit;
 }
